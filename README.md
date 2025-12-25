@@ -1,1 +1,1 @@
-# naum
+# ECG Alert Simulation (JavaFX)
