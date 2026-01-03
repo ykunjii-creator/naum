@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>DAUEM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- 좌측 네비 -->
+  <div class="side-nav">
+
+  <div class="nav-item active" onclick="showPage('home', this)">
+    <div class="active-pill"></div>
+    <img src="assets/nav_home.png" />
+  </div>
+
+  <div class="nav-item" onclick="showPage('guide', this)">
+    <img src="assets/nav_guide.png" />
+  </div>
+
+  <div class="nav-item" onclick="showPage('report', this)">
+    <img src="assets/nav_report.png" />
+  </div>
+
+  <div class="nav-item" onclick="showPage('profile', this)">
+    <img src="assets/nav_profile.png" />
+  </div>
+
+</div>
+
+
+  <!-- 메인 -->
+  <div class="main">
+    <div class="bpm">50</div>
+    <div class="unit">bpm</div>
+
+
+    <div class="character">
+  <img id="heartImage" src="assets/heart_normal.png" />
+</div>
+  </div>
+
+  <!-- 위험 패널 -->
+  <div class="danger-panel">
+    <div class="status-icon">⚠️</div>
+    <div class="danger-text">맥박 수가 떨어져요!</div>
+    <div class="sub-text">5초 후 자동 제어가 시작됩니다.</div>
+    <button>인근 쉼터 안내</button>
+    <button>응급 대응</button>
+
+
+    
+  </div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
