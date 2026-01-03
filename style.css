@@ -17,15 +17,18 @@ body {
 /* 좌측 네비 */
 .side-nav {
   position: absolute;
-  left: 24px;
+  left: 100px;
   top: 50%;
   transform: translateY(-50%);
   width: 84px;
   height: 420px;
 
+  width: 100px;      
+  height: 520px;
+
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 48px;
-  padding: 20px 0;
+  border-radius: 56px;
+  padding: 24px 0;
 
   display: flex;
   flex-direction: column;
@@ -116,7 +119,7 @@ body {
 
 
 .character img {
-  width: 380px;          /* ← 여기서 크기 조절 */
+  width: 380px;          
   height: auto;
   max-width: 100%;
   margin-top: 300px;
@@ -126,33 +129,44 @@ body {
 /* 위험 패널 */
 .danger-panel {
   position: absolute;
-  right: 20px;
+  right: 100px;
   top: 50%;
   transform: translateY(-50%);
-  width: 180px;
-  height: 360px;
+  width: 220px;
+  height: 420px;
   background: #e53935;
-  border-radius: 32px;
-  padding: 20px;
+  border-radius: 36px;
+  padding: 24px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.danger-text {
+  font-size: 18px;
+}
+
+.sub-text {
+  font-size: 14px;
+}
+
 .danger-panel button {
   background: white;
   color: #e53935;
   border: none;
-  border-radius: 20px;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 15px;
+  border-radius: 24px;
   padding: 10px;
   font-weight: bold;
 }
 
-
 .danger-panel {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* ⬅ 가로 중앙 */
-  text-align: center;    /* ⬅ 텍스트 중앙 */
+  align-items: center;  
+  text-align: center;   
 }
+
